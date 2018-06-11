@@ -186,6 +186,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.vendor.shutdown.waittime=500
 
+# Boot
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.vendor.shutdown.waittime=500
+
 #disable UBWC for camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.preview.ubwc=0 \
