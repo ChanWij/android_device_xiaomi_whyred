@@ -6,3 +6,4 @@ ro.boot.fpsensor                    u:object_r:fingerprint_prop:s0
 
 # Mlipay
 persist.sys.ifaa                    u:object_r:ifaa_prop:s0
+persist.audio.dirac                 u:object_r:dirac_prop:s0

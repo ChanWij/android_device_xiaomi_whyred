@@ -930,6 +930,11 @@ lib64/vendor.qti.esepowermanager@1.0.so|1662a45073eb48f9682975289ba87e314e6edec8
 vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so|ffa61e2f9f5305fa91d9f3a6ed2ee366ae8bf413
 vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|5061bb7675b5ad6a8ba8e2090c8c8a15cf83aebc
 
+# Dirac
+vendor/etc/diracmobile.config
+vendor/lib/libDiracAPI_SHARED.so
+vendor/lib/soundfx/libdirac.so
+
 # Fingerprint firmware
 etc/firmware/goodixfp.b00:vendor/firmware/goodixfp.b00
 etc/firmware/goodixfp.b01:vendor/firmware/goodixfp.b01
