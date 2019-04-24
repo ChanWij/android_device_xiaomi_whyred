@@ -248,6 +248,7 @@ TARGET_USES_MKE2FS := true
 # System as root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init root=/dev/dm-0 dm=\"system none ro,0 1 android-verity /dev/mmcblk0p61\"
+BOARD_ROOT_EXTRA_FOLDERS := dsp firmware bt_firmware
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_whyred
