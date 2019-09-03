@@ -15,4 +15,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ancient_whyred.mk
+    $(LOCAL_DIR)/aosp_whyred.mk

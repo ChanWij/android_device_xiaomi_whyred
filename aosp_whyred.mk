@@ -24,9 +24,15 @@ $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/whyred.mk)
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
 # Inherit some common ancient stuff.
-$(call inherit-product, vendor/ancient/config/common.mk)
+#$(call inherit-product, vendor/ancient/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+export BUILD_GAPPS=false
+CUSTOM_BUILD_TYPE := PRIVATE
 
-PRODUCT_NAME := ancient_whyred
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
+PRODUCT_NAME := aosp_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
@@ -37,8 +43,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="whyred" \
     PRODUCT_NAME="whyred" \
-    PRIVATE_BUILD_DESC="whyred-user 8.1.0 OPM1.171019.011 V10.2.2.0.OEICNXM release-keys"
+    PRIVATE_BUILD_DESC="whyred-user 9 PKQ1.180904.001 V10.3.1.0.PEIMIXM release-keys"
 
-BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V10.2.2.0.OEICNXM:user/release-keys
+#BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V10.2.2.0.OEICNXM:user/release-keys
+BUILD_FINGERPRINT := xiaomi/whyred/whyred:9/PKQ1.180904.001/V10.3.1.0.PEIMIXM:user/release-keys
 
 TARGET_VENDOR := Xiaomi

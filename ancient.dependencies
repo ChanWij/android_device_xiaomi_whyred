@@ -1,8 +1,0 @@
-[
- {
-    "repository": "Sweeto143/vendor_xiaomi_MiuiCamera",
-    "target_path": "vendor/xiaomi/MiuiCamera",
-    "branch": "pie",
-    "remote": "github"
-  }
-]
