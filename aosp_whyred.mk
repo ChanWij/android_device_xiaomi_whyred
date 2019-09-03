@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
-$(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/whyred.mk)
+#$(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/whyred.mk)
 
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
@@ -27,8 +27,7 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 #$(call inherit-product, vendor/ancient/config/common.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-export BUILD_GAPPS=false
-CUSTOM_BUILD_TYPE := PRIVATE
+TARGET_GAPPS_ARCH := arm64
 
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
